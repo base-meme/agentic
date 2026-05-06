@@ -1,0 +1,61 @@
+{
+  "name": "@basememe/ai",
+  "version": "0.3.4",
+  "description": "CLI, OpenClaw plugin, and agent skill for Basememe meme tokens on Base — V4 standard tokens and tax tokens (transfer/trade tax + 4-channel processor split + Vault strategies: split, snowball, burn-dividend, gift)",
+  "bin": {
+    "basememe": "bin/basememe.js"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "skills/",
+    "plugin.js",
+    "openclaw.plugin.json",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/base-meme/agentic.git"
+  },
+  "homepage": "https://github.com/base-meme/agentic#readme",
+  "bugs": {
+    "url": "https://github.com/base-meme/agentic/issues"
+  },
+  "openclaw": {
+    "extensions": [
+      "./plugin.js"
+    ],
+    "compat": {
+      "pluginApi": ">=2026.3.24-beta.2"
+    },
+    "build": {
+      "openclawVersion": "2026.3.24-beta.2"
+    }
+  },
+  "type": "module",
+  "keywords": [
+    "basememe",
+    "base",
+    "ethereum",
+    "meme",
+    "memecoin",
+    "token",
+    "cli",
+    "agent",
+    "skill",
+    "openclaw",
+    "tax-token",
+    "vault",
+    "dividend",
+    "uniswap-v2",
+    "uniswap-v4"
+  ],
+  "author": "Basememe",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "1.13.6",
+    "commander": "12.1.0",
+    "dotenv": "16.6.1",
+    "viem": "2.47.6"
+  }
+}

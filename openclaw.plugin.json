@@ -1,0 +1,13 @@
+{
+  "id": "basememe-ai",
+  "name": "Basememe AI",
+  "description": "Create and trade meme tokens on Base.Meme (Base) via the basememe CLI and bundled agent skill.",
+  "skills": [
+    "skills/basememe-integration"
+  ],
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "description": "No plugin-level config. Configure PRIVATE_KEY and optional RPC/API env vars through skills.entries[\"basememe-ai\"].env."
+  }
+}
